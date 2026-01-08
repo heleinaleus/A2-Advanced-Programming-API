@@ -1,1 +1,36 @@
-temp
+START program
+
+Create main application window
+
+Display search input box
+Display search button
+Display random cocktail button
+
+WHEN user clicks Search button
+    Get text from search input
+    Send request to Cocktail API using search text
+    IF cocktail data is found
+        Display cocktail name
+        Display ingredients list
+        Display recipe
+        Display cocktail image
+    ELSE
+        Display "Cocktail not found" message
+    END IF
+END WHEN
+
+WHEN user clicks Random Cocktail button
+    Send request to Cocktail API for random cocktail
+    IF data is returned
+        Display cocktail name
+        Display ingredients and measurements
+        Display recipe
+        Display cocktail image
+    ELSE
+        Display error message
+    END IF
+END WHEN
+
+END program
+
+
